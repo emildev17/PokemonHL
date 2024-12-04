@@ -1,2 +1,13 @@
-# PokemonHL
-Pokémon-Quiz welches auf die PokéAPI zugreift. Erstellt in Rahmen einer Projektwoche.
+# 🎮 PokemonHL
+
+PokemonHL ist eine interaktive Web-App.
+
+## 🚀 Features
+### **HigherLower**
+- **Fesselndes Gameplay**: Errate, ob der nächste Pokémon-Wert höher oder niedriger ist!
+- **Sound-Effekte**: Immersives Spielerlebnis durch passende Audio-Feedbacks.
+- **Benutzerfreundlich**: Für alle Altersgruppen geeignet.
+
+## 📜 Lizenz
+
+Dieses Projekt steht unter der MIT-Lizenz. Weitere Informationen findest du in der [LICENSE](./LICENSE)-Datei.

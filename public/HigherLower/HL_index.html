@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="../pokeball.png">
+  <link rel="stylesheet" href="HL_styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <title>Higher or Lower?</title>
+</head>
+<body>
+<h1>Higher or Lower</h1>
+
+
+<img id="themeToggle" src="./img/dark.png" alt="Toggle Theme">
+<div id="game-container">
+
+
+  <div class="pokemon-container">
+    <div class="pokemon" id="pokemon1">
+      <img id="pokemon1-img" src="" alt="Pokémon 1">
+      <p id="pokemon1-name">???</p>
+      <p id="pokemon1-stat">?</p>
+      <button id="choose-pokemon1">Wählen</button>
+    </div>
+
+    <div class="pokemon" id="pokemon2">
+      <img id="pokemon2-img" src="" alt="Pokémon 2">
+      <p id="pokemon2-name">???</p>
+      <p id="pokemon2-stat">?</p>
+      <button id="choose-pokemon2">Wählen</button>
+    </div>
+  </div>
+
+
+  <p id="result"></p>
+
+  <div id="scores">
+    <p id="score">Score: 0</p>
+    <p id="high-score">Highscore: 0</p>
+  </div>
+
+  <button id="play-again">Reset</button>
+  <button id="toggle-shiny" style="padding: 10px 20px; margin-top: 20px; font-size: 14px; cursor: pointer;">Shiny</button>
+  <button id="toggle-display" style="padding: 10px 20px; margin-top: 20px; font-size: 14px; cursor: pointer;">Artwork</button>
+
+</div>
+<script src="HL_app.js"></script>
+</body>
+</html>
