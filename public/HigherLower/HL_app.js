@@ -1,6 +1,5 @@
 const apiUrl = "https://pokeapi.co/api/v2/pokemon/";
 
-
 //Used attributes: name, images, stats, height, weight, ID und cries
 // number of pokémon in the api
 const maxPokemonId = 1025;
@@ -90,8 +89,9 @@ function updateShowdownSprites(pokemonData, imgElement) {
         `https://play.pokemonshowdown.com/sprites/xyani/${pokemonData.name}.gif`;
 
     imgElement.onerror = function () {
-        // fallback to static sprite if animated sprite does not exist
-        imgElement.src = useShiny ? pokemonData.sprites.front_shiny : pokemonData.sprites.front_default;
+        // fallback to artwork if animated sprite does not exist
+        imgElement.src = useShiny ? pokemonData.sprites.other['official-artwork'].front_shiny : pokemonData.sprites.other['official-artwork'].front_default;;
+
     };
 
     imgElement.src = showdownUrl;
@@ -237,7 +237,6 @@ async function showGameOverScreen(isHighscore) {
     });
 }
 
-
 function loadTheme() {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
@@ -248,7 +247,6 @@ function loadTheme() {
         themeToggle.src = './img/dark.png';
     }
 }
-
 
 themeToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
