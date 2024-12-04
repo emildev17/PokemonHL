@@ -90,7 +90,7 @@ function updateShowdownSprites(pokemonData, imgElement) {
 
     imgElement.onerror = function () {
         // fallback to artwork if animated sprite does not exist
-        imgElement.src = useShiny ? pokemonData.sprites.other['official-artwork'].front_shiny : pokemonData.sprites.other['official-artwork'].front_default;;
+        imgElement.src = useShiny ? pokemonData.sprites.other['official-artwork'].front_shiny : pokemonData.sprites.other['official-artwork'].front_default;
 
     };
 
@@ -154,7 +154,7 @@ function checkWinner(selectedPokemon) {
         setTimeout(() => {
             resultText.classList.remove("draw-message");
             startGame();
-        }, 2500);
+        }, 2000);
     } else if ((selectedPokemon === "pokemon1" && winner === "pokemon1") ||
         (selectedPokemon === "pokemon2" && winner === "pokemon2")) {
         score += 1;
@@ -162,7 +162,7 @@ function checkWinner(selectedPokemon) {
         document.getElementById("choose-pokemon1").disabled = true;
         document.getElementById("choose-pokemon2").disabled = true;
         scoreElement.textContent = `Score: ${score}`;
-        setTimeout(startGame, 2500);
+        setTimeout(startGame, 2000);
     } else {
         if (score > highScore) {
             updateHighScore();
